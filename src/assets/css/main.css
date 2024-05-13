@@ -70,3 +70,7 @@
     /* height: calc(100vh - 464px); Adjust according to the height of your navbar and carousel */
     z-index: 35; /* About section has highest z-index */
   }
+
+  .login-btn-txt {
+    color: white!important;
+  }
