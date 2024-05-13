@@ -7,12 +7,13 @@ import Login from './assets/pages/Login';
 import Register from './assets/pages/Register';
 import Appointment from './assets/pages/Appointment';
 import Profile from './assets/pages/Profile';
+
 function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route exact path="/" element={<Home />}/>
+          <Route exact path="/" element={<Home />} />
           <Route path="/service" element={<Services />} />
           <Route path="/doctors" element={<Doctor />} />
           <Route path="/login" element={<Login />} />
