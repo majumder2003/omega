@@ -1,0 +1,72 @@
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .blinking {
+    animation: blink 1s infinite;
+  }
+  .carousel-image {
+    height: 50%; /* Set the height to 50% */
+  }
+
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Navbar has higher z-index */
+  }
+  
+  .carousel-container {
+    margin-top: 64px; /* Adjust according to the height of your navbar */
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Carousel has lower z-index */
+  }
+  
+  .about-container {
+    position: relative; /* Adjust according to the height of your carousel */
+    padding: 20px;
+    /* overflow-y: auto; */
+    /* height: calc(100vh - 464px); Adjust according to the height of your navbar and carousel */
+    z-index: 30; /* About section has highest z-index */
+    background-color: transparent;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+    z-index: 30;
+    background-color: transparent;
+    /* Set overflow-y to auto to enable scrolling */
+  }
+  .gallery-item {
+    flex: 1;
+    margin-right: 10px;
+    /* Add transition for smooth animation */
+    transition: transform 0.2s ease;
+  }
+  
+  .gallery-item:hover {
+    /* Lift the card slightly on hover */
+    transform: translateY(-15px);
+  }
+
+  .footer-container {
+    position: relative; /* Adjust according to the height of your carousel */
+    padding: 00px;
+    /* overflow-y: auto; */
+    /* height: calc(100vh - 464px); Adjust according to the height of your navbar and carousel */
+    z-index: 35; /* About section has highest z-index */
+  }
