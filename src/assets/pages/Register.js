@@ -9,7 +9,7 @@ function Register() {
         <div>
             <NavBar />
             <RegisterNow className="reg-container" />
-            <Footer />
+            <Footer className="footer-container" />
         </div>
     )
 }

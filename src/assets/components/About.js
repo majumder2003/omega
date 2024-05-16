@@ -6,28 +6,43 @@ import image3 from '../images/abt-img3.jpg';
 // import image4 from '../images/abt-img4.jpg';
 
 function About() {
+    // const theme = useTheme();
+
+    // const aboutStyle = {
+    //     backgroundColor: theme.palette.mode === 'dark' ? 'rgba(0, 0, 0, 0.7)' : 'transparent',
+    //     color: theme.palette.mode === 'dark' ? '#ffffff' : 'inherit',
+    //     padding: '20px',
+    //     borderRadius: '10px'
+    // };
+
     return (
         <div>
             <h2>About Us</h2>
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
                 <Grid item xs={12} md={0}>
-                    <Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-                        <CardContent>
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={6}>
-                                    <img src={image1} alt="about1" style={{ width: '100%', marginRight: '10px' }} />
-                                </Grid>
-                                <Grid item xs={6}>
+
+
+                    <Grid container spacing={2} alignItems="center">
+                        <Grid item xs={6}>
+                            <img src={image1} alt="about1" style={{ width: '100%', marginRight: '10px' }} />
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Card>
+                                <CardContent style={{ height: '45vh' }}>
                                     <Typography variant="body1" style={{ fontSize: 26 }}>
                                         At Omega Clinic, we are dedicated to providing exceptional healthcare services with a
                                         focus on compassion, excellence, and innovation. Our state-of-the-art facility,
                                         coupled with a team of experienced healthcare professionals, allows us to deliver
                                         personalized care tailored to meet the unique needs of each patient.
                                     </Typography>
-                                </Grid>
-                            </Grid>
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={6}>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={2} alignItems="center">
+                        <Grid item xs={6}>
+                            <Card>
+                                <CardContent style={{ height: '45vh' }}>
                                     <Typography variant="body1" style={{ fontSize: 26 }}>
                                         <b>Our Mission:</b>
                                         <br />
@@ -36,16 +51,20 @@ function About() {
                                         We strive to enhance the lives of our patients through evidence-based practices,
                                         cutting-edge technology, and a commitment to continuous improvement.
                                     </Typography>
-                                </Grid>
-                                <Grid item xs={6}>
-                                    <img src={image2} alt="about2" style={{ width: '100%', marginRight: '10px' }} />
-                                </Grid>
-                            </Grid>
-                            <Grid container spacing={2} alignItems="center">
-                                <Grid item xs={6}>
-                                    <img src={image3} alt="about3" style={{ width: '100%', marginRight: '10px' }} />
-                                </Grid>
-                                <Grid item xs={6}>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <img src={image2} alt="about2" style={{ width: '100%', marginRight: '10px' }} />
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={2} alignItems="center">
+                        <Grid item xs={6}>
+                            <img src={image3} alt="about3" style={{ width: '100%', marginRight: '10px' }} />
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Card>
+                                <CardContent style={{ height: '45vh' }}>
                                     <Typography variant="body1" style={{ fontSize: 26 }}>
                                         <b>Expert Care Team:</b><br />
 
@@ -54,9 +73,11 @@ function About() {
                                         care to our patients. With expertise in a wide range of medical specialties, we collaborate closely
                                         to ensure seamless coordination of care and optimal outcomes for our patients.
                                     </Typography>
-                                </Grid>
-                            </Grid>
-                            {/* <Grid container spacing={2} alignItems="center">
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                    </Grid>
+                    {/* <Grid container spacing={2} alignItems="center">
                                 <Grid item xs={6}>
                                     <Typography variant="body1" style={{ fontSize: 26 }}>
                                         <b>Patient-Centered Approach:</b>
@@ -71,8 +92,8 @@ function About() {
                                     <img src={image4} alt="about4" style={{ width: '100%', marginRight: '10px' }} />
                                 </Grid>
                             </Grid> */}
-                        </CardContent>
-                    </Card>
+
+
                 </Grid>
             </Grid>
         </div>

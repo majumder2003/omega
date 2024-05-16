@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Grid } from '@mui/material';
 import '../css/main.css'; // Import your CSS file
+import '../css/custom.css';
 import Das from '../images/DrDas.jpg';
 import Kathie from '../images/DrKathie.jpg';
 import Samanta from '../images/DrSamanta.jpg';
@@ -22,8 +23,8 @@ function Gallery() {
     ];
 
     return (
-        <Grid container direction="column" spacing={1} className="gallery-container" justifyContent="center" style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
-            <Grid><h2>Gallery</h2></Grid>
+        <Grid container direction="column" spacing={1} className="gallery-container gallary-dark" justifyContent="center" >
+            <Grid><h2 style={{color: 'black' }}>Gallery</h2></Grid>
             <Grid container direction="row" spacing={1} className="gallery-container" justifyContent="center" alignItems="flex-start">
             {images.map((image, index) => (
                 <Grid item xs={12} sm={5} md={3} key={index} className='gallery-item'>

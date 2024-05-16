@@ -7,7 +7,7 @@ function Login() {
     return (
         <div>
             <NavBar />
-            <LoginComp />
+            <LoginComp /><br />
             <Footer />
         </div>
     )

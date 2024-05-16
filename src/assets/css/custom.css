@@ -1,0 +1,21 @@
+.nav-white {
+/* ÷background: transparent; */
+    color: rgb(3, 37, 49);
+    background-color: aliceblue;
+}
+.nav-dark {
+    /* background: transparent; */
+    color: rgb(196, 211, 216);
+    background-color: rgb(3, 28, 49);
+}
+.gallary-light {
+    background: transparent;
+    color: rgb(3, 37, 49);
+    background-color: aliceblue;
+}
+.gallary-dark {
+
+    background: transparent;
+    color: rgb(196, 211, 216);
+    background-color: rgb(3, 28, 49, 0.5);
+}
